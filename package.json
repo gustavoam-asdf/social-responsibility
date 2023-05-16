@@ -1,0 +1,23 @@
+{
+	"name": "social-responsibility",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gh-pages -d public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gustavoam-asdf/social-responsability.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gustavoam-asdf/social-responsability/issues"
+	},
+	"homepage": "https://github.com/gustavoam-asdf/social-responsability#readme",
+	"devDependencies": {
+		"eslint": "8.40.0",
+		"gh-pages": "5.0.0"
+	}
+}
