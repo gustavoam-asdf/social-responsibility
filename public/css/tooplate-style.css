@@ -22,15 +22,15 @@ body {
 a {
 	text-decoration: none;
 	transition: all 0.3s ease;
-	color: #38CCCC;
+	color: #000000;
 }
 
 a:hover {
-	color: #30ADAD;
+	color: #85C1E9;
 }
 
 .tm-about-text a {
-	color: #9F6;
+	color: rgb(255, 255, 255);
 }
 
 h1,
