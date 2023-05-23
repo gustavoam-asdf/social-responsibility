@@ -33,14 +33,6 @@ a:hover {
 	color: rgb(255, 255, 255);
 }
 
-h1,
-h2,
-p,
-i,
-address,
-.tm-text-white {
-	color: white;
-}
 
 .tm-link-gray {
 	color: #999999;
