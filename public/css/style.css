@@ -497,4 +497,13 @@ a:focus {
 	color: #191818;
 }
 
+.hide {
+	display: none;
+}
+
+.myDIV:hover+.hide {
+	display: block;
+	color: #191818;
+}
+
 /* end footer section*/
