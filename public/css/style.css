@@ -10,6 +10,7 @@ body {
 
 .layout_padding2 {
 	padding: 45px 0;
+
 }
 
 .layout_padding2-top {
@@ -273,19 +274,32 @@ a:focus {
 }
 
 .service_section .card {
+	display: grid;
+	grid-template-columns: repeat(autofill, minmax(280px, 1fr));
+	border-radius: 1.1rem;
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 	box-sizing: border-box;
 	position: relative;
+	flex-basis: 24%;
 }
+
 
 .service_section .card .card-title {
 	color: #fc5d35;
 
 }
 
-img {
-	max-width: 80%;
-	max-height: 80%;
+.service_section .card .card-text {
+	text-align: justify;
+}
+
+
+
+.service_section .card .card-body .main-banner img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .service_section .card::after {
@@ -308,13 +322,11 @@ img {
 
 .service_section .card:hover::after {
 	background-color: #fc5d35;
+	border-radius: 1.1rem;
 }
 
 
 /* end service section */
-
-
-
 
 
 
