@@ -283,6 +283,11 @@ a:focus {
 
 }
 
+img {
+	max-width: 80%;
+	max-height: 80%;
+}
+
 .service_section .card::after {
 	content: "";
 	position: absolute;
@@ -304,6 +309,7 @@ a:focus {
 .service_section .card:hover::after {
 	background-color: #fc5d35;
 }
+
 
 /* end service section */
 
@@ -494,15 +500,6 @@ a:focus {
 }
 
 .footer_section a {
-	color: #191818;
-}
-
-.hide {
-	display: none;
-}
-
-.myDIV:hover+.hide {
-	display: block;
 	color: #191818;
 }
 
