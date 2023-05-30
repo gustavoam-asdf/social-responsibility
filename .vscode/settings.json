@@ -29,4 +29,21 @@
 	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+	"cSpell.language": "en,es",
+	"cSpell.words": [
+		"AENOR",
+		"Antunez",
+		"Atencio",
+		"ciberseguridad",
+		"concientización",
+		"concientizar",
+		"Edutin",
+		"encriptación",
+		"gestion",
+		"inmersivas",
+		"Intertek",
+		"Mayolo",
+		"reputacional",
+		"Úrsula"
+	],
 }
