@@ -284,7 +284,7 @@ a:focus {
 	box-sizing: border-box;
 	position: relative;
 	flex-basis: 24%;
-	
+
 }
 
 .service_sections .card .card-title {
@@ -328,16 +328,22 @@ a:focus {
 	border-radius: 1.1rem;
 }
 
-.service_sections .link_a{
-color:#000000!important;
+.service_sections .link_a {
+	color: #000000 !important;
 }
 
 
 
 .service_section .card .card-img-top {
 	width: 100%;
-	margin: 0px auto 5px auto;
+	margin: 0px;
 }
+
+.service_section .card .card-img-top {
+	width: 50px;
+	margin: 55px auto 5px auto;
+}
+
 .service_section .card {
 	display: grid;
 	grid-template-columns: repeat(autofill, minmax(280px, 1fr));
