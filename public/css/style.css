@@ -268,7 +268,7 @@ a:focus {
 
 
 /* service section */
-.card-img-top-2 {
+.service_section .card .card-img-top-2 {
 	width: 100%;
 	margin: 0px;
 }
