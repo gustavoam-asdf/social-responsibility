@@ -1,5 +1,5 @@
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	color: #000000;
 	background-color: #ffffff;
 }
@@ -10,6 +10,7 @@ body {
 
 .layout_padding2 {
 	padding: 45px 0;
+
 }
 
 .layout_padding2-top {
@@ -81,8 +82,6 @@ body {
 	height: auto;
 }
 
-.header_section {}
-
 .header_section .container-fluid {
 	padding-right: 25px;
 	padding-left: 25px;
@@ -119,7 +118,7 @@ a:focus {
 
 .navbar-brand,
 .navbar-brand:hover {
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 24px;
 	color: #fafcfd;
@@ -210,8 +209,6 @@ a:focus {
 	background-repeat: no-repeat;
 }
 
-.slider_item-container .slider_item-detail {}
-
 .slider_item-detail h1 {
 	font-weight: 700;
 	font-size: 60px;
@@ -272,19 +269,39 @@ a:focus {
 
 /* service section */
 .service_section .card .card-img-top {
-	width: 100px;
-	margin: 55px auto 5px auto;
+	width: 100%;
+	margin: 0px auto 5px auto;
 }
 
 .service_section .card {
+	display: grid;
+	grid-template-columns: repeat(autofill, minmax(280px, 1fr));
+	border-radius: 1.1rem;
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 	box-sizing: border-box;
 	position: relative;
+	flex-basis: 24%;
 }
+
 
 .service_section .card .card-title {
 	color: #fc5d35;
 
+}
+
+.service_section .card .card-text {
+	text-align: justify;
+}
+
+
+
+.service_section .card .card-body .main-banner img {
+	width: 300px;
+	height: 300px;
+	object-fit: fill;
+	border-radius: 1.1rem;
 }
 
 .service_section .card::after {
@@ -307,12 +324,11 @@ a:focus {
 
 .service_section .card:hover::after {
 	background-color: #fc5d35;
+	border-radius: 1.1rem;
 }
 
+
 /* end service section */
-
-
-
 
 
 
