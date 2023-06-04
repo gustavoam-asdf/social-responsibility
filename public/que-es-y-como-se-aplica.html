@@ -30,15 +30,16 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/styleG.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet" />
 	<link href="css/main.css" rel="stylesheet" />
 	<link href="css/header.css" rel="stylesheet" />
-
 	<link href="css/magnific-popup.min.css" rel="stylesheet">
 	<link href="css/tooplate-style.css" rel="stylesheet">
 </head>
 
 <body>
+
 	<header class="header_section">
 		<nav class="navbar navbar-expand-lg custom_nav-container container">
 			<a class="navbar-brand" href="./" style="text-transform: none;display: flex; gap: .5rem;">
@@ -103,15 +104,12 @@
 				Es razonable entonces estar preocupado por el mejoramiento progresivo de nuestra capacidad de creación; para
 				contribuir con el progreso de nuestro entorno
 			</p>
-			<div class=" layout_padding2">
+			<div class="layout_padding2">
 				<div class="card-deck">
 					<div class="card">
 						<img class="card-img-top" src="images/tech01.png" alt="Card image cap" />
 						<div class="card-body">
 							<h5 class="card-title">En Educación</h5>
-							<!--<div class="main-banner">
-								<img src="images/techEdu.png">
-							</div>-->
 							<div class="main-video">
 								<video loop class="clip">
 									<source src="images/video/clip1.webm" type="video/webm">
@@ -127,9 +125,6 @@
 						<img class="card-img-top" src="images/bussIcon.svg" alt="Card image cap" />
 						<div class="card-body">
 							<h5 class="card-title">En Negocios</h5>
-							<!-- <div class="main-banner">
-								<img src="images/bussi.png">
-							</div>-->
 							<div class="main-video">
 								<video loop class="clip">
 									<source src="images/video/clip2.webm" type="video/webm">
@@ -147,9 +142,6 @@
 						<img class="card-img-top" src="images/healt1.svg" alt="Card image cap" />
 						<div class="card-body">
 							<h5 class="card-title">En Salud</h5>
-							<!-- <div class="main-banner">
-								<img src="images/health.webp">
-							</div>-->
 							<div class="main-video">
 								<video loop class="clip">
 									<source src="images/video/clip3.webm" type="video/webm">
@@ -166,9 +158,6 @@
 						<img class="card-img-top" src="images/secu1.svg" alt="Card image cap" />
 						<div class="card-body">
 							<h5 class="card-title">En Seguridad Informática</h5>
-							<!-- <div class="main-banner">
-								<img src="images/Security.png">
-							</div>-->
 							<div class="main-video">
 								<video loop class="clip">
 									<source src="images/video/clip4.webm" type="video/webm">
@@ -184,9 +173,6 @@
 						<img class="card-img-top" src="images/emv1.svg" alt="Card image cap" />
 						<div class="card-body">
 							<h5 class="card-title">En Medio Ambiente</h5>
-							<!--<div class="main-banner">
-								<img src="images/enviro.avif">
-							</div> -->
 							<div class="main-video">
 								<video loop class="clip">
 									<source src="images/video/clip5.webm" type="video/webm">
@@ -202,8 +188,61 @@
 				</div>
 			</div>
 		</div>
+
+		<!--inicio seccion galería de videos -->
+		<div class="video-gallery-container">
+			<h2 class="custom_heading">Descubre Mas</h2>
+			<div class="video-gallery">
+				<div class="featured-video">
+					<div class="responsive-iframe">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/stqXwwEkF0g?rel=0"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+
+					<h3 class="video-title">
+						Design Responsive Course Cards Using HTML, CSS & JavaScript
+					</h3>
+				</div>
+
+				<div class="all-videos">
+					<div class="video">
+						<img class="thumbnail" data-id="stqXwwEkF0g"
+							data-title="Design Responsive Course Cards Using HTML, CSS & JavaScript" src="images/thumbnail-1.jpeg"
+							alt="" />
+
+						<div class="play-icon">
+							<img src="images/play-icon.png" alt="" />
+						</div>
+					</div>
+
+					<div class="video">
+						<img class="thumbnail" data-id="ohFuDyhED8s"
+							data-title="Design A Responsive Portfolio Website Using HTML, CSS & JS" src="images/thumbnail-2.jpeg"
+							alt="" />
+
+						<div class="play-icon">
+							<img src="images/play-icon.png" alt="" />
+						</div>
+					</div>
+
+					<div class="video">
+						<img class="thumbnail" data-id="prX_NC3Nbh8"
+							data-title="Design A Responsive Homepage Using HTML, CSS For Blogger" src="images/thumbnail-3.jpeg"
+							alt="" />
+
+						<div class="play-icon">
+							<img src="images/play-icon.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 	<!-- end section show-->
+	<!--script videos Como-->
 	<script>
 		const clip = document.querySelectorAll('.clip');
 		for (let i = 0; i < clip.length; i++) {
@@ -216,6 +255,29 @@
 					clip[i].pause()
 				})
 		}
+	</script>
+	<!--Script videos galeria-->
+	<script>
+		const videoThumbnails = document.querySelectorAll(
+			".video-gallery .all-videos .thumbnail"
+		);
+		const videoPlayer = document.querySelector(
+			".video-gallery .featured-video iframe"
+		);
+		const videoTitle = document.querySelector(".video-gallery .video-title");
+
+		const showVideo = (videoId, title) => {
+			let videoUrl = `https://www.youtube.com/embed/${videoId}?rel=0`;
+			videoPlayer.setAttribute("src", videoUrl);
+			videoTitle.innerHTML = title;
+		};
+
+		videoThumbnails.forEach((v) => {
+			v.addEventListener("click", () => {
+				showVideo(v.dataset.id, v.dataset.title);
+			});
+		});
+
 	</script>
 </body>
 
