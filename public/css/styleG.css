@@ -34,7 +34,10 @@
 
 .video-gallery .thumbnail {
 	height: 120px;
+	width: 200px;
 	cursor: pointer;
+	float: left;
+    object-fit: cover;
 }
 
 .video-gallery .video {
