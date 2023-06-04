@@ -29,7 +29,7 @@
 	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
-	"cSpell.language": "en,es",
+	"cSpell.language": "en,es,en-GB,lorem",
 	"cSpell.words": [
 		"AENOR",
 		"Antunez",
