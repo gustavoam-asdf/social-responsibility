@@ -1,11 +1,11 @@
 .video-gallery-container {
 	width: 900px;
-	background: #f1dcdc;
 	padding: 8px 0 0 0;
 	margin: 0 auto;
 	border-radius: 1.1rem;
-	-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+
 }
 
 .video-gallery-container,
@@ -16,7 +16,7 @@
 
 .video-gallery-container .video-gallery {
 	display: flex;
-	background: #02151e;
+	border-color: rgb(121, 111, 99);
 	justify-content: center;
 	padding: 16px;
 	padding-top: 24px;
@@ -29,6 +29,7 @@
 	font-weight: 700;
 	font-size: 20px;
 	width: 100%;
+	color: black;
 }
 
 .video-gallery .thumbnail {
