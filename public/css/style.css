@@ -30,6 +30,36 @@ body {
 	padding-bottom: 75px;
 }
 
+.fa-solid,
+.fa-magnifying-glass,
+.fa-file-pdf,
+.fa-file-word {
+	font-size: 25px;
+	padding: 10px;
+	height: 25;
+	width: 25;
+	background: #000000;
+	transition: all 300ms ease-out;
+	border-radius: 25px;
+}
+
+.fa-solid:hover {
+	transform: scale(1.5);
+	color: #000000;
+	background-color: #fc5d35;
+}
+
+.fa-magnifying-glass {
+	color: #08de81;
+}
+
+.fa-file-pdf {
+	color: #f30000;
+}
+
+.fa-file-word {
+	color: #0d78fc;
+}
 
 .custom_dark-btn,
 .custom_orange-btn {
@@ -42,13 +72,34 @@ body {
 	border: 1px solid transparent;
 }
 
+.custom_readmore-btn {
+	display: inline-block;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+	outline: none;
+	color: #f7f7f7;
+	border: 1px #fc5d35;
+}
+
 .custom_dark-btn {
 	background-color: #000000;
+}
+
+.custom_readmore-btn {
+	background-color: #fc5d35;
 }
 
 .custom_dark-btn:hover {
 	border: 1px solid #000000;
 	color: #000000;
+	background-color: transparent;
+	transform: scale(1.2);
+}
+
+.custom_readmore-btn:hover {
+	border: 1px solid #fc5d35;
+	color: #fc5d35;
 	background-color: transparent;
 }
 
