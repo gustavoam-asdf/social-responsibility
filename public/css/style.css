@@ -2,6 +2,7 @@ body {
 	font-family: 'Poppins', sans-serif !important;
 	color: #000000;
 	background-color: #ffffff;
+	scroll-behavior: smooth;
 }
 
 .layout_padding {
@@ -613,9 +614,11 @@ a:focus {
 	padding: 15px 0 15px 0;
 
 }
+
 .wrapper {
 	width: 80%;
 }
+
 .contact_form-container button {
 	border: none;
 	background-color: #fc5d35;
@@ -624,8 +627,8 @@ a:focus {
 	text-transform: uppercase;
 	font-size: 14px;
 }
-.sections1
-{
+
+.sections1 {
 	padding: 80px 0;
 }
 
@@ -635,16 +638,17 @@ section#contact {
 	background-size: cover;
 	padding-bottom: 110px;
 	min-height: 600px;
- box-shadow: none !important;
-margin-bottom: 0px !important;
+	box-shadow: none !important;
+	margin-bottom: 0px !important;
 }
+
 section h2.section-heading {
 	font-size: 40px;
 	margin-top: 0;
 	text-align: center;
 	text-transform: uppercase !important;
 	color: #058BCE;
-	
+
 }
 
 section h3.section-subheading {
@@ -658,30 +662,32 @@ section h3.section-subheading {
 	margin-top: 20px !important;
 	color: #222222;
 }
+
 @media (min-width:768px) {
 	sections1 {
-			padding: 80px 0
+		padding: 80px 0
 	}
 }
 
 @media (max-width:480px) {
 	section h2.section-heading {
-			font-size: 43px;
-			margin-top: 0;
-			text-align: center;
-			text-transform: uppercase !important;
-			color: #058BCE;
+		font-size: 43px;
+		margin-top: 0;
+		text-align: center;
+		text-transform: uppercase !important;
+		color: #058BCE;
 	}
+
 	section h3.section-subheading {
-			font-size: 14px;
-			line-height: 26px;
-			font-family: 'Source Sans Pro', sans-serif;
-			text-transform: none;
-			text-align: center;
-			font-weight: 400;
-			margin-bottom: 47px;
-			margin-top: 15px !important;
-			color: #000;
+		font-size: 14px;
+		line-height: 26px;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-transform: none;
+		text-align: center;
+		font-weight: 400;
+		margin-bottom: 47px;
+		margin-top: 15px !important;
+		color: #000;
 	}
 }
 
@@ -695,12 +701,15 @@ section#team {
 	background-color: #FEFEFE;
 	padding-bottom: 0px !important;
 }
+
 section#contact .section-heading {
 	color: #fff !important;
 }
+
 section#contact .section-subheading {
 	color: #fff !important;
 }
+
 section#contact .section-heading-contact {
 	font-size: 60px;
 	margin-top: 0;
@@ -708,19 +717,24 @@ section#contact .section-heading-contact {
 	text-transform: uppercase !important;
 	color: #fff !important;
 }
+
 section#contact .form-group {
 	margin-bottom: 20px
 }
+
 section#contact .form-group input,
 section#contact .form-group textarea {
 	padding: 16px
 }
+
 section#contact .form-group input.form-control {
 	height: auto
 }
+
 section#contact .form-group textarea.form-control {
 	height: 178px;
 }
+
 section#contact .form-control:focus {
 	border-color: #48AAF1;
 	box-shadow: none
@@ -732,27 +746,32 @@ section#contact::-webkit-input-placeholder {
 	font-weight: 700;
 	color: #bbb
 }
+
 section#contact:-moz-placeholder {
 	font-family: "lato";
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #bbb
 }
+
 section#contact::-moz-placeholder {
 	font-family: "lato";
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #bbb
 }
+
 section#contact:-ms-input-placeholder {
 	font-family: "lato";
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #bbb
 }
+
 section#contact .text-danger {
 	color: #e74c3c
 }
+
 /* contact section */
 
 /* map section */
@@ -802,36 +821,43 @@ section#contact .text-danger {
 	margin-top: 15px;
 	font-size: 15px;
 }
+
 .back-to-top {
 	position: fixed;
 	right: 15px;
 	bottom: 15px;
 	z-index: 11;
 }
- 
+
 /* end info section */
 .flex-column {
 	flex-direction: column !important;
 }
+
 .justify-content-start {
 	justify-content: flex-start !important;
 }
+
 .d-flex {
 	display: flex !important;
 }
-.img_width
-{
+
+.img_width {
 	height: 350px;
 }
-.orange{
-	color:#FDAC53;
+
+.orange {
+	color: #FDAC53;
 }
-.bg-orange{
-	background:#FDAC53;
+
+.bg-orange {
+	background: #FDAC53;
 }
-.footer-bg{
-	background:#131313;
+
+.footer-bg {
+	background: #131313;
 }
+
 .scroll-up {
 	position: fixed;
 
@@ -839,6 +865,7 @@ section#contact .text-danger {
 	bottom: 1.3em;
 	right: 1.3em;
 }
+
 .scroll-up a {
 	background-color: #058BCE;
 	display: block;
@@ -848,14 +875,15 @@ section#contact .text-danger {
 	font-size: 25px;
 	line-height: 38px;
 }
+
 .scroll-up a:hover,
 .scroll-up a:active {
 	background-color: #205CB1;
 }
 
 /* footer section*/
-.btn-orange{
-	background:#fc5d35;
+.btn-orange {
+	background: #fc5d35;
 }
 
 .footer {
