@@ -906,3 +906,8 @@ section#contact .text-danger {
 }
 
 /* end footer section*/
+
+.news-section .img-fluid {
+	object-fit: cover;
+	object-position: center;
+}
