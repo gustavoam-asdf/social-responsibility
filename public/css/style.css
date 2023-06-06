@@ -819,8 +819,15 @@ section#contact .text-danger {
 .d-flex {
 	display: flex !important;
 }
+.img_width
+{
+	height: 350px;
+}
 .orange{
 	color:#FDAC53;
+}
+.bg-orange{
+	background:#FDAC53;
 }
 .footer-bg{
 	background:#131313;
